@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("https://raw.githubusercontent.com/alura-cursos/aluraplus/aula04/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__cabecalho{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 34px;
+    padding: 5% 18%;
+}
+
+.container__botao{
+    padding: 5% 14% 0;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container__botao__links{
+    border-radius: 5px;
+    padding: 1.5em;
+    color: var(--branco-principal);
+    display: block;
+    border: 1px solid var(--branco-principal);
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container__miudo{
+    font-family: var(--fonte-principal);
+    font-size: 0.80rem;
+    font-weight: 600;
+}
+
+.container__botao__links:hover{
+    background-color: var(--botao-azul);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10%;
+}
+
+.container__imagem{
+    width: 70%;
+}
+
+.container__cabecalho{
+    font-family: var(--fonte-principal);
+    font-weight: 1400;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    padding: 0;
+}
+
+.container__paragrafo{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cinza-secundario);
+    padding-top: 3%;
+    padding-right: 20%;
+}
+
+.secundario__botao{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    color: var(--branco-principal);
+    padding-top: 5%;;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    color: var(--branco-principal);
+    margin: 5em 0;
+}
+
+.rodape__logo{
+    padding: 0 47%;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 2% 20%;
+}
+
+.lista__link__botao{
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    font-size: 1rem;
+}
+
+.rodape__texto{
+    font-family: var(--fonte-principal);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.5%;
+}
